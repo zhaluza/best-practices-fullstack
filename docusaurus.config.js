@@ -1,17 +1,17 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Fullstack Best Practices',
+  tagline: 'Learn to code better',
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
-  organizationName: 'facebook', // Usually your GitHub org/user name.
-  projectName: 'docusaurus', // Usually your repo name.
+  organizationName: 'zhaluza',
+  projectName: 'best-practices-fullstack',
   themeConfig: {
     navbar: {
-      title: 'My Site',
+      title: 'Fullstack JS Best Practices',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
@@ -19,11 +19,17 @@ module.exports = {
       items: [
         {
           type: 'doc',
-          docId: 'intro',
+          docId: 'backend/intro',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Backend',
         },
-        { to: '/blog', label: 'Blog', position: 'left' },
+        {
+          type: 'doc',
+          docId: 'frontend/intro',
+          position: 'left',
+          label: 'Frontend',
+        },
+
         {
           href: 'https://github.com/facebook/docusaurus',
           label: 'GitHub',
@@ -35,14 +41,19 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Guides',
           items: [
             {
-              label: 'Tutorial',
-              to: '/docs/intro',
+              label: 'Backend',
+              to: '/docs/backend/intro',
+            },
+            {
+              label: 'Frontend',
+              to: '/docs/frontend/intro',
             },
           ],
         },
+        { title: 'About', items: [] },
         {
           title: 'Community',
           items: [
@@ -64,17 +75,13 @@ module.exports = {
           title: 'More',
           items: [
             {
-              label: 'Blog',
-              to: '/blog',
-            },
-            {
               label: 'GitHub',
               href: 'https://github.com/facebook/docusaurus',
             },
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} My Project, Inc. Built with Docusaurus.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Odesmith. Built with Docusaurus.`,
     },
   },
   presets: [
@@ -87,16 +94,11 @@ module.exports = {
           editUrl:
             'https://github.com/facebook/docusaurus/edit/master/website/',
         },
-        blog: {
-          showReadingTime: true,
-          // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
-        },
         theme: {
-          customCss: require.resolve('./src/css/custom.css'),
+          customCss: require.resolve('./src/scss/custom.scss'),
         },
       },
     ],
   ],
+  plugins: ['docusaurus-plugin-sass'],
 };

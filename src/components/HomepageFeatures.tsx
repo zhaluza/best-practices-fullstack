@@ -1,6 +1,7 @@
 import React from 'react';
 import clsx from 'clsx';
-import styles from './HomepageFeatures.module.css';
+// @ts-expect-error ts-migrate(2307) FIXME: Cannot find module './HomepageFeatures.module.scss... Remove this comment to see the full error message
+import styles from './HomepageFeatures.module.scss';
 
 const FeatureList = [
   {
@@ -18,8 +19,8 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Docusaurus lets you focus on your docs, and we&apos;ll do the chores.
+        Go ahead and move your docs into the <code>docs</code> directory.
       </>
     ),
   },
@@ -28,14 +29,14 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Extend or customize your website layout by reusing React. Docusaurus
+        can be extended while reusing the same header and footer.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({ Svg, title, description }) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
