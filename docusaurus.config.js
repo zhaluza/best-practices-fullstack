@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'best-practices-fullstack',
   themeConfig: {
     navbar: {
-      title: 'Fullstack JS Best Practices',
+      title: 'Fullstack Best Practices',
       logo: {
         alt: 'My Site Logo',
         src: 'img/logo.svg',
