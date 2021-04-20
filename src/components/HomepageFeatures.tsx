@@ -5,32 +5,32 @@ import styles from './HomepageFeatures.module.scss';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Detailed & Up to Date',
+    Svg: require('../../static/img/undraw_Website_setup_re_d4y9.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        We're your single source of truth for modern, battle-tested frontend
+        and backend strategies.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Built for Anyone',
+    Svg: require('../../static/img/undraw_stand_out_1oag.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores.
-        Go ahead and move your docs into the <code>docs</code> directory.
+        Whether you're a newer developer or a seasoned engineer looking to keep
+        your skills sharp, you'll find something useful here.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Completely Open Source',
+    Svg: require('../../static/img/undraw_project_team_lc5a.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus
-        can be extended while reusing the same header and footer.
+        Want to contribute? Get in touch with us if you have an idea for a
+        written guide or code sample, and then make a PR.
       </>
     ),
   },
