@@ -31,7 +31,7 @@ module.exports = {
         },
 
         {
-          href: 'https://github.com/facebook/docusaurus',
+          href: 'https://github.com/zhaluza/best-practices-fullstack',
           label: 'GitHub',
           position: 'right',
         },
