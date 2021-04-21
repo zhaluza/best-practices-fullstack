@@ -29,7 +29,12 @@ module.exports = {
           position: 'left',
           label: 'Frontend',
         },
-
+        {
+          type: 'doc',
+          docId: 'about/intro',
+          position: 'left',
+          label: 'About',
+        },
         {
           href: 'https://github.com/zhaluza/best-practices-fullstack',
           label: 'GitHub',
@@ -53,7 +58,19 @@ module.exports = {
             },
           ],
         },
-        { title: 'About', items: [] },
+        {
+          title: 'About',
+          items: [
+            {
+              label: 'What Is FBP?',
+              to: '/docs/about/intro',
+            },
+            {
+              label: 'How to Contribute',
+              to: '/docs/about/contributing.mdx',
+            },
+          ],
+        },
         {
           title: 'Community',
           items: [
