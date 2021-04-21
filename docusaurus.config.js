@@ -67,7 +67,7 @@ module.exports = {
             },
             {
               label: 'How to Contribute',
-              to: '/docs/about/contributing.mdx',
+              to: '/docs/about/contributing',
             },
           ],
         },
